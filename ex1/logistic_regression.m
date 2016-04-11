@@ -22,3 +22,10 @@ function [f,g] = logistic_regression(theta, X,y)
   %        up the gradients (df/dtheta) for each example. Store the result in 'g'.
   %
 %%% YOUR CODE HERE %%%
+
+  % linear_regression function realized by Hailong Zhu,email: hlzhu@tju.edu.cn
+  % github address https://github.com/yougoforward/
+  f = y*log(sigmoid((theta'*X)'))+(1-y)*log(1-sigmoid((theta'*X)'));
+  g = X*(sigmoid((theta'*X))-y)';
+  
+  % end of relization by hlzhu
