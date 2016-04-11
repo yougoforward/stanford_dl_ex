@@ -22,3 +22,11 @@ function [f,g] = linear_regression(theta, X,y)
   %        computed gradient in 'g'.
   
 %%% YOUR CODE HERE %%%
+
+  % linear_regression function realized by Hailong Zhu,email: hlzhu@tju.edu.cn
+  % github address https://github.com/yougoforward/
+  
+  f = 1/2*sum((theta'*X-y).^2);
+  g = X*(theta'*X-y)';
+  
+  % end of relization by hlzhu
